@@ -195,16 +195,16 @@ function ServiceCard({ service, index, isInView }: ServiceCardProps) {
       data-cursor="expand"
     >
       {/* Background glow base tracking coordinates */}
-      {hovered && (
-        <motion.div
-          className="pointer-events-none absolute -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-radial to-transparent blur-3xl z-0"
-          style={{
-            left: `${coords.x}px`,
-            top: `${coords.y}px`,
-            background: `radial-gradient(circle, ${service.service.accent === 'text-electric-blue' ? 'rgba(0, 240, 255, 0.15)' : service.service.accent === 'text-neon-purple' ? 'rgba(189, 0, 255, 0.15)' : 'rgba(255, 120, 0, 0.15)'} 0%, transparent 70%)`
-          }}
-        />
-      )}
+      <motion.div
+        className="pointer-events-none absolute -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-radial to-transparent blur-3xl z-0"
+        animate={{ opacity: hovered ? 1 : 0 }}
+        transition={{ duration: 0.25 }}
+        style={{
+          left: `${coords.x}px`,
+          top: `${coords.y}px`,
+          background: `radial-gradient(circle, ${service.accent === 'text-electric-blue' ? 'rgba(0, 240, 255, 0.15)' : service.accent === 'text-neon-purple' ? 'rgba(189, 0, 255, 0.15)' : 'rgba(255, 120, 0, 0.15)'} 0%, transparent 70%)`
+        }}
+      />
 
       {/* Decorative gradient corners */}
       <div className="absolute top-0 left-0 w-full h-full bg-linear-to-b from-transparent via-transparent to-black/30 pointer-events-none z-0" />

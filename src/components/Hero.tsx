@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Play, ArrowRight, Video, Scissors, Award, Sparkles } from "lucide-react";
 import Magnetic from "./Magnetic";
 import ThreeCanvas from "./ThreeCanvas";
@@ -20,7 +20,7 @@ export default function Hero() {
   };
 
   // Individual word variants
-  const wordVariants = {
+  const wordVariants: Variants = {
     hidden: { y: 60, opacity: 0 },
     visible: {
       y: 0,
