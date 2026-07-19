@@ -19,7 +19,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Yash | Freelance Video Editor & Motion Graphics Artist",
   description: "I Transform Raw Footage Into Cinematic Stories. High-end video editing, motion design, color grading, and commercial ads that convert.",
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
