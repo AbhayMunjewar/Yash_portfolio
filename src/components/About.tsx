@@ -35,30 +35,37 @@ export default function About() {
   };
 
   // Software stack data
+  // Software stack data
   const software = [
     {
       name: "After Effects",
-      level: "95%",
+      level: "1.5+ Yrs Exp",
       description: "Advanced VFX & Motion Graphics",
       color: "rgba(189, 0, 255, 0.4)",
       svg: (
         <svg viewBox="0 0 100 100" className="w-12 h-12">
           <rect x="10" y="10" width="80" height="80" rx="15" fill="#0c0720" stroke="#bd00ff" strokeWidth="2" />
           <text x="50" y="62" fill="#bd00ff" fontSize="36" fontWeight="bold" fontFamily="var(--font-syne)" textAnchor="middle">Ae</text>
-          <filter id="glow-ae">
-            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-            <feMerge>
-              <feMergeNode in="coloredBlur"/>
-              <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-          </filter>
+        </svg>
+      )
+    },
+    {
+      name: "CapCut Pro",
+      level: "3+ Yrs Exp",
+      description: "Short-Form Hooks & Fast Cuts",
+      color: "rgba(0, 240, 255, 0.4)",
+      svg: (
+        <svg viewBox="0 0 100 100" className="w-12 h-12">
+          <rect x="10" y="10" width="80" height="80" rx="15" fill="#05141e" stroke="#00f0ff" strokeWidth="2" />
+          <path d="M30 35 L50 25 L70 35 L70 65 L50 75 L30 65 Z" fill="none" stroke="#00f0ff" strokeWidth="3" />
+          <path d="M40 45 L60 55 M60 45 L40 55" stroke="#00f0ff" strokeWidth="3" strokeLinecap="round" />
         </svg>
       )
     },
     {
       name: "Premiere Pro",
-      level: "98%",
-      description: "Cinematic Editing & Pacing",
+      level: "3+ Yrs Exp",
+      description: "Long-Form & Multi-Cam Pacing",
       color: "rgba(0, 240, 255, 0.4)",
       svg: (
         <svg viewBox="0 0 100 100" className="w-12 h-12">
@@ -69,52 +76,33 @@ export default function About() {
     },
     {
       name: "DaVinci Resolve",
-      level: "90%",
-      description: "Lumetri & HDR Color Grading",
+      level: "Professional",
+      description: "Color Correction & Grading",
       color: "rgba(255, 120, 0, 0.4)",
       svg: (
         <svg viewBox="0 0 100 100" className="w-12 h-12">
           <rect x="10" y="10" width="80" height="80" rx="15" fill="#140f0c" stroke="#ff7800" strokeWidth="2" />
           <circle cx="50" cy="50" r="22" fill="none" stroke="#ff7800" strokeWidth="3" />
           <circle cx="50" cy="50" r="12" fill="#ff7800" />
-          <line x1="50" y1="15" x2="50" y2="28" stroke="#ff7800" strokeWidth="3" />
-          <line x1="50" y1="72" x2="50" y2="85" stroke="#ff7800" strokeWidth="3" />
-          <line x1="15" y1="50" x2="28" y2="50" stroke="#ff7800" strokeWidth="3" />
-          <line x1="72" y1="50" x2="85" y2="50" stroke="#ff7800" strokeWidth="3" />
         </svg>
       )
     },
     {
-      name: "Cinema 4D",
-      level: "85%",
-      description: "3D Animation & Simulation",
-      color: "rgba(0, 100, 255, 0.4)",
+      name: "Sound Design",
+      level: "Professional",
+      description: "Audio Cleanup & Foley Layers",
+      color: "rgba(16, 185, 129, 0.4)",
       svg: (
         <svg viewBox="0 0 100 100" className="w-12 h-12">
-          <rect x="10" y="10" width="80" height="80" rx="15" fill="#050a1e" stroke="#0064ff" strokeWidth="2" />
-          {/* C4D Cube outline */}
-          <path d="M 50 25 L 75 38 L 75 62 L 50 75 L 25 62 L 25 38 Z" fill="none" stroke="#0064ff" strokeWidth="2" />
-          <path d="M 50 25 L 50 75 M 25 38 L 50 50 L 75 38" fill="none" stroke="#0064ff" strokeWidth="1.5" />
-        </svg>
-      )
-    },
-    {
-      name: "Blender 3D",
-      level: "80%",
-      description: "3D Modelling & Assets",
-      color: "rgba(255, 165, 0, 0.4)",
-      svg: (
-        <svg viewBox="0 0 100 100" className="w-12 h-12">
-          <rect x="10" y="10" width="80" height="80" rx="15" fill="#1c0f05" stroke="#ffa500" strokeWidth="2" />
-          <path d="M 50 45 C 55 45, 65 50, 65 60 C 65 70, 50 75, 42 70 C 35 65, 38 52, 45 48 M 65 60 C 72 58, 80 50, 80 40 C 80 30, 70 35, 65 42 M 50 45 L 72 25" fill="none" stroke="#ffa500" strokeWidth="2" />
-          <circle cx="48" cy="58" r="5" fill="#ffa500" />
+          <rect x="10" y="10" width="80" height="80" rx="15" fill="#041f17" stroke="#10b981" strokeWidth="2" />
+          <path d="M30 50 L40 50 L45 30 L55 70 L60 40 L65 55 L70 50" fill="none" stroke="#10b981" strokeWidth="3" strokeLinecap="round" />
         </svg>
       )
     },
     {
       name: "Illustrator",
-      level: "92%",
-      description: "Vector Assets & Typography",
+      level: "Vector Assets",
+      description: "Graphics & Title Elements",
       color: "rgba(255, 200, 0, 0.4)",
       svg: (
         <svg viewBox="0 0 100 100" className="w-12 h-12">
@@ -177,7 +165,7 @@ export default function About() {
               >
                 <div>
                   <div className="text-3xl font-extrabold font-syne text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple leading-none">
-                    8+ Years
+                    3+ Years
                   </div>
                   <div className="text-[10px] text-neutral-400 font-semibold uppercase tracking-wider mt-1.5">
                     Cutting Cinematic Art
