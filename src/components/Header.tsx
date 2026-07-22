@@ -56,8 +56,8 @@ export default function Header() {
           className="text-xl font-extrabold font-syne text-white tracking-tight flex items-center gap-1.5 cursor-none interactive-item" 
           data-cursor="home"
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">YASH.</span>
-          <span className="text-[10px] text-neutral-400 font-mono tracking-widest self-end pb-0.5">STUDIO</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">YXEDITZ.</span>
+          <span className="text-[10px] text-neutral-400 font-mono tracking-widest self-end pb-0.5">YASH SATAV</span>
         </a>
 
         {/* Desktop Navigation */}
