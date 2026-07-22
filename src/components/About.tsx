@@ -35,12 +35,11 @@ export default function About() {
   };
 
   // Software stack data
-  // Software stack data
   const software = [
     {
       name: "After Effects",
       level: "1.5+ Yrs Exp",
-      description: "Advanced VFX & Motion Graphics",
+      description: "Motion Graphics, VFX & Kinetic Text",
       color: "rgba(189, 0, 255, 0.4)",
       svg: (
         <svg viewBox="0 0 100 100" className="w-12 h-12">
@@ -50,34 +49,9 @@ export default function About() {
       )
     },
     {
-      name: "CapCut Pro",
-      level: "3+ Yrs Exp",
-      description: "Short-Form Hooks & Fast Cuts",
-      color: "rgba(0, 240, 255, 0.4)",
-      svg: (
-        <svg viewBox="0 0 100 100" className="w-12 h-12">
-          <rect x="10" y="10" width="80" height="80" rx="15" fill="#05141e" stroke="#00f0ff" strokeWidth="2" />
-          <path d="M30 35 L50 25 L70 35 L70 65 L50 75 L30 65 Z" fill="none" stroke="#00f0ff" strokeWidth="3" />
-          <path d="M40 45 L60 55 M60 45 L40 55" stroke="#00f0ff" strokeWidth="3" strokeLinecap="round" />
-        </svg>
-      )
-    },
-    {
-      name: "Premiere Pro",
-      level: "3+ Yrs Exp",
-      description: "Long-Form & Multi-Cam Pacing",
-      color: "rgba(0, 240, 255, 0.4)",
-      svg: (
-        <svg viewBox="0 0 100 100" className="w-12 h-12">
-          <rect x="10" y="10" width="80" height="80" rx="15" fill="#05141e" stroke="#00f0ff" strokeWidth="2" />
-          <text x="50" y="62" fill="#00f0ff" fontSize="36" fontWeight="bold" fontFamily="var(--font-syne)" textAnchor="middle">Pr</text>
-        </svg>
-      )
-    },
-    {
       name: "DaVinci Resolve",
       level: "Professional",
-      description: "Color Correction & Grading",
+      description: "Color Correction & Lumetri Grading",
       color: "rgba(255, 120, 0, 0.4)",
       svg: (
         <svg viewBox="0 0 100 100" className="w-12 h-12">
@@ -88,26 +62,27 @@ export default function About() {
       )
     },
     {
-      name: "Sound Design",
-      level: "Professional",
-      description: "Audio Cleanup & Foley Layers",
-      color: "rgba(16, 185, 129, 0.4)",
+      name: "CapCut",
+      level: "3+ Yrs Exp",
+      description: "Viral Hooks & Short-Form Pacing",
+      color: "rgba(0, 240, 255, 0.4)",
       svg: (
         <svg viewBox="0 0 100 100" className="w-12 h-12">
-          <rect x="10" y="10" width="80" height="80" rx="15" fill="#041f17" stroke="#10b981" strokeWidth="2" />
-          <path d="M30 50 L40 50 L45 30 L55 70 L60 40 L65 55 L70 50" fill="none" stroke="#10b981" strokeWidth="3" strokeLinecap="round" />
+          <rect x="10" y="10" width="80" height="80" rx="15" fill="#05141e" stroke="#00f0ff" strokeWidth="2" />
+          <path d="M30 35 L50 25 L70 35 L70 65 L50 75 L30 65 Z" fill="none" stroke="#00f0ff" strokeWidth="3" />
+          <path d="M40 45 L60 55 M60 45 L40 55" stroke="#00f0ff" strokeWidth="3" strokeLinecap="round" />
         </svg>
       )
     },
     {
-      name: "Illustrator",
-      level: "Vector Assets",
-      description: "Graphics & Title Elements",
-      color: "rgba(255, 200, 0, 0.4)",
+      name: "Canva",
+      level: "Professional",
+      description: "High-CTR Thumbnails & Graphic Assets",
+      color: "rgba(0, 196, 204, 0.4)",
       svg: (
         <svg viewBox="0 0 100 100" className="w-12 h-12">
-          <rect x="10" y="10" width="80" height="80" rx="15" fill="#1a1402" stroke="#ffc800" strokeWidth="2" />
-          <text x="50" y="62" fill="#ffc800" fontSize="36" fontWeight="bold" fontFamily="var(--font-syne)" textAnchor="middle">Ai</text>
+          <rect x="10" y="10" width="80" height="80" rx="15" fill="#031a1c" stroke="#00c4cc" strokeWidth="2" />
+          <text x="50" y="62" fill="#00c4cc" fontSize="36" fontWeight="bold" fontFamily="var(--font-syne)" textAnchor="middle">C</text>
         </svg>
       )
     }
