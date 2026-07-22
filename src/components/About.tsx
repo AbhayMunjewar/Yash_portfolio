@@ -203,7 +203,7 @@ export default function About() {
             >
               <span className="h-1 w-8 bg-electric-blue rounded-full" />
               <span className="text-[11px] font-bold uppercase tracking-wider text-electric-blue font-syne">
-                The Story Behind the Cuts
+                THE CREATIVE ENGINE BEHIND YXEDITZ
               </span>
             </motion.div>
             <motion.h2
@@ -212,8 +212,10 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl sm:text-5xl font-bold font-syne text-white tracking-tight"
             >
-              Crafting Cinematic Flow <br />
-              <span className="text-neutral-400">& Creative Logic.</span>
+              I'm Yash Satav, <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue via-white to-neon-purple">
+                Known as YXEDITZ.
+              </span>
             </motion.h2>
           </div>
 
@@ -222,13 +224,16 @@ export default function About() {
             initial={{ opacity: 0, y: 25 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6 text-neutral-400 font-light leading-relaxed text-base"
+            className="space-y-6 text-neutral-300 font-light leading-relaxed text-base"
           >
             <p>
-              I am Yash, a freelance video editor, motion graphics director, and visual storyteller. With over 8 years of digital agency and independent studio experience, I partner with directors, content curators, and marketing leaders globally to translate raw footage into visual assets that convert.
+              I specialize in high-end <strong className="text-white font-semibold">Adobe After Effects video editing</strong>, with a hyper-focused niche in <strong className="text-electric-blue font-semibold">podcasts</strong> and <strong className="text-neon-purple font-semibold font-mono">trading & finance content</strong>.
             </p>
             <p>
-              My design ideology blends <strong className="text-white">mathematical precision in timing</strong> with <strong className="text-white">cinematic visual composition</strong>. From initial timeline trimming and color correction to advanced 3D renders and keyframe-tracked animations, every pixel is calibrated to optimize user engagement.
+              In today's fast-moving digital ecosystem, attention is the ultimate currency. My core mission is to turn complex ideas and long conversations into <strong className="text-white font-semibold">ultra-clean, engaging, and high-retention videos</strong> that capture audiences within seconds, establish brand authority, and turn casual viewers into loyal subscribers.
+            </p>
+            <p>
+              Whether it's transforming intricate financial charts into sleek animated infographics or cutting multi-cam podcast discussions with razor-sharp audio timing and kinetic captions, I engineer every keyframe to help creators and brands scale efficiently.
             </p>
           </motion.div>
 
@@ -242,29 +247,29 @@ export default function About() {
             <div className="flex gap-3 items-start">
               <CheckCircle2 className="h-5 w-5 text-electric-blue shrink-0 mt-0.5" />
               <div>
-                <span className="text-sm font-semibold text-white block">Audience Hooking Pacing</span>
-                <span className="text-xs text-neutral-400">High-retention timing designed for social & commercial formats.</span>
+                <span className="text-sm font-semibold text-white block">Trading & Finance Editing</span>
+                <span className="text-xs text-neutral-400">Market chart motion graphics, financial breakdown animations, & clear visual data.</span>
               </div>
             </div>
             <div className="flex gap-3 items-start">
               <CheckCircle2 className="h-5 w-5 text-neon-purple shrink-0 mt-0.5" />
               <div>
-                <span className="text-sm font-semibold text-white block">Lumetri & HDR Color Precision</span>
-                <span className="text-xs text-neutral-400">Custom LUT grading sets the emotional mood and fits brand aesthetics.</span>
+                <span className="text-sm font-semibold text-white block">Podcast & Multi-Cam Pacing</span>
+                <span className="text-xs text-neutral-400">High-retention dialogue cuts, audio cleaning, & viral short-form clipping.</span>
               </div>
             </div>
             <div className="flex gap-3 items-start">
               <CheckCircle2 className="h-5 w-5 text-neon-pink shrink-0 mt-0.5" />
               <div>
-                <span className="text-sm font-semibold text-white block">Dynamic Motion Graphic Assets</span>
-                <span className="text-xs text-neutral-400">Seamlessly integrated explainer charts, callouts, and typography.</span>
+                <span className="text-sm font-semibold text-white block">After Effects Motion Design</span>
+                <span className="text-xs text-neutral-400">Custom kinetic typography, lower thirds, callouts, & sound-synced VFX.</span>
               </div>
             </div>
             <div className="flex gap-3 items-start">
               <CheckCircle2 className="h-5 w-5 text-emerald-400 shrink-0 mt-0.5" />
               <div>
-                <span className="text-sm font-semibold text-white block">Soundscape Design</span>
-                <span className="text-xs text-neutral-400">Immersive foley, noise reduction, and sound layering.</span>
+                <span className="text-sm font-semibold text-white block">High-Retention Growth Focus</span>
+                <span className="text-xs text-neutral-400">Structured pacing designed to maximize AVD (Average View Duration) & conversion.</span>
               </div>
             </div>
           </motion.div>

@@ -17,8 +17,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Yash | Freelance Video Editor & Motion Graphics Artist",
-  description: "I Transform Raw Footage Into Cinematic Stories. High-end video editing, motion design, color grading, and commercial ads that convert.",
+  title: "Yash Satav (YXEDITZ) | After Effects Video Editor & Motion Graphics Specialist",
+  description: "Specialized After Effects video editing by Yash Satav (YXEDITZ). Focused on podcasts and trading/finance content with clean, high-retention cuts that help creators and brands grow.",
 };
 
 export const viewport = {
