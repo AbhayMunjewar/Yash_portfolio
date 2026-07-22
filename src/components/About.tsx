@@ -248,10 +248,10 @@ export default function About() {
           className="text-center mb-12"
         >
           <span className="text-[10px] text-neutral-500 font-bold uppercase tracking-widest font-mono block mb-2">
-            POST-PRODUCTION PIPELINE
+            VIDEO EDITING SOFTWARE
           </span>
           <h3 className="text-2xl font-bold font-syne text-white">
-            Software Engine Stack
+            Video Editing Software Stack
           </h3>
         </motion.div>
 
@@ -260,7 +260,7 @@ export default function About() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto"
         >
           {software.map((sw, i) => (
             <motion.div
@@ -278,23 +278,23 @@ export default function About() {
               </div>
 
               {/* Title and stats */}
-              <div className="text-center">
+              <div className="text-center w-full">
                 <span className="font-semibold text-sm text-white block mb-0.5 group-hover:text-electric-blue transition-colors">
                   {sw.name}
                 </span>
-                <span className="text-[10px] text-neutral-500 block mb-2">
+                <span className="text-[10px] text-neutral-500 block mb-3 min-h-[28px] leading-tight">
                   {sw.description}
                 </span>
                 <div className="w-full bg-neutral-900 rounded-full h-1.5 overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
-                    animate={isInView ? { width: sw.level } : {}}
+                    animate={isInView ? { width: "100%" } : {}}
                     transition={{ duration: 1.2, delay: 0.5 + i * 0.1 }}
                     className="h-full bg-linear-to-r from-electric-blue to-neon-purple rounded-full"
                   />
                 </div>
-                <span className="text-[9px] font-bold text-neutral-400 mt-1.5 block font-mono">
-                  {sw.level} Proficiency
+                <span className="text-[9px] font-bold text-electric-blue mt-2 block font-mono">
+                  {sw.level}
                 </span>
               </div>
             </motion.div>
