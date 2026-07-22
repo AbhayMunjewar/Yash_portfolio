@@ -43,7 +43,7 @@ export default function Stats() {
       glow: "rgba(255, 0, 127, 0.15)"
     },
     {
-      value: 8,
+      value: 3,
       suffix: "+",
       label: "Years Experience",
       icon: <Calendar className="h-6 w-6 text-amber-500" />,
