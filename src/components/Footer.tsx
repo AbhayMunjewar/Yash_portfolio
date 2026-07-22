@@ -74,11 +74,11 @@ export default function Footer() {
         <div className="md:col-span-5 flex flex-col justify-between h-full">
           <div>
             <div className="text-2xl font-extrabold font-syne text-white tracking-tight mb-4 flex items-center gap-1.5">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">YASH.</span>
-              <span>STUDIO</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-neon-purple">YXEDITZ.</span>
+              <span className="text-xs text-neutral-400 font-mono tracking-wider">YASH SATAV</span>
             </div>
             <p className="text-xs text-neutral-500 font-light max-w-sm leading-relaxed mb-6">
-              Bespoke visual post-production suite specialized in cutting-edge editing rhythm, motion graphic layers, and film grading curves.
+              Specialized After Effects post-production suite for podcasts and trading/finance creators focused on high retention and audience growth.
             </p>
           </div>
           
@@ -156,7 +156,7 @@ export default function Footer() {
 
       {/* Copyright row */}
       <div className="max-w-7xl w-full mx-auto px-6 lg:px-24 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 relative z-10 text-[10px] text-neutral-600 font-mono">
-        <span>© {new Date().getFullYear()} YASH.ART. ALL KEYFRAMES RESERVED.</span>
+        <span>© {new Date().getFullYear()} YXEDITZ (YASH SATAV). ALL KEYFRAMES RESERVED.</span>
         <span className="flex items-center gap-1">
           DESIGNED WITH <Heart className="h-3 w-3 fill-red-500 stroke-red-500" /> & CODE FOR CREATIVES.
         </span>
