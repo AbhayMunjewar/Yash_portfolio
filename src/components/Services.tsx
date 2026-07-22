@@ -31,88 +31,88 @@ export default function Services() {
 
   const services: ServiceItem[] = [
     {
-      title: "Video Editing",
-      description: "Pacing-driven, high-retention cuts that lock viewers. Multi-cam sequencing, sound triggers, and visual storytelling.",
-      icon: <Scissors className="h-6 w-6" />,
-      color: "from-[rgba(0,240,255,0.15)] to-transparent",
-      accent: "text-electric-blue"
-    },
-    {
-      title: "Motion Graphics",
-      description: "Custom explainer elements, kinetic subtitles, and floating 2D/3D visual overlays designed to structure content.",
-      icon: <Sparkles className="h-6 w-6" />,
-      color: "from-[rgba(189,0,255,0.15)] to-transparent",
-      accent: "text-neon-purple"
-    },
-    {
-      title: "Color Grading",
-      description: "Professional Lumetri & HDR grading. Creative mood setups, exposure matching, and skin-tone optimization.",
-      icon: <Eye className="h-6 w-6" />,
-      color: "from-[rgba(255,120,0,0.15)] to-transparent",
-      accent: "text-amber-500"
-    },
-    {
-      title: "Commercial Ads",
-      description: "High-converting promo video assets for product launches, SaaS dashboards, and commercial agency campaigns.",
-      icon: <Flame className="h-6 w-6" />,
-      color: "from-[rgba(255,0,127,0.15)] to-transparent",
-      accent: "text-neon-pink"
-    },
-    {
-      title: "Instagram Reels",
-      description: "Fast-paced vertical videos optimized for the algorithm. Includes micro-cuts, dynamic subtitles, and zoom hacks.",
-      icon: <Smartphone className="h-6 w-6" />,
-      color: "from-[rgba(0,240,255,0.15)] to-transparent",
-      accent: "text-cyan-400"
-    },
-    {
-      title: "YouTube Editing",
-      description: "Long-form pacing designed for high Average View Duration (AVD). Integrated narrative arcs and sound cues.",
-      icon: <Play className="h-6 w-6" />,
-      color: "from-[rgba(189,0,255,0.15)] to-transparent",
-      accent: "text-purple-400"
-    },
-    {
-      title: "TikTok Videos",
-      description: "Viral hook pacing within the first 3 seconds, matched with trending audio tracks and high-impact captions.",
-      icon: <Zap className="h-6 w-6" />,
-      color: "from-[rgba(255,230,0,0.15)] to-transparent",
-      accent: "text-yellow-400"
-    },
-    {
-      title: "VFX",
-      description: "Seamless compositing, green screen keying, rotoscoping, object removal, and clean screen replacements.",
-      icon: <Cpu className="h-6 w-6" />,
-      color: "from-[rgba(0,100,255,0.15)] to-transparent",
-      accent: "text-blue-500"
-    },
-    {
-      title: "Sound Design",
-      description: "Immersive foley layers, riser transitions, atmospheric rumble, voice gating, noise cleanup, and sound leveling.",
-      icon: <Volume2 className="h-6 w-6" />,
-      color: "from-[rgba(16,185,129,0.15)] to-transparent",
-      accent: "text-emerald-400"
-    },
-    {
-      title: "Wedding Films",
-      description: "Emotional, cinematic highlight reels and feature cuts, meticulously colored and paced to wedding soundtracks.",
-      icon: <Heart className="h-6 w-6" />,
-      color: "from-[rgba(244,63,94,0.15)] to-transparent",
-      accent: "text-rose-400"
-    },
-    {
-      title: "Podcast Editing",
-      description: "Clean multi-cam dialogue cuts, audio repair, dead air clipping, and highlights formatted for social shorts.",
+      title: "Podcast Video Editing",
+      description: "Clean multi-cam dialogue cuts, dead-air removal, audio repair, and viral short-form clipping optimized for retention.",
       icon: <Mic className="h-6 w-6" />,
       color: "from-[rgba(236,72,153,0.15)] to-transparent",
       accent: "text-pink-400"
     },
     {
-      title: "Thumbnail Design",
-      description: "High-CTR, narrative-matched graphic design. Combines custom editing layers, masks, and bold text layouts.",
+      title: "Trading & Finance Editing",
+      description: "Sleek market chart motion graphics, financial breakdown animations, and high-clarity data presentation that builds trust.",
+      icon: <Zap className="h-6 w-6" />,
+      color: "from-[rgba(0,240,255,0.15)] to-transparent",
+      accent: "text-electric-blue"
+    },
+    {
+      title: "Short-Form Reels & Shorts",
+      description: "Fast-paced vertical videos for Instagram & TikTok. Algorithm-optimized hooks, micro-cuts, and high-retention pacing.",
+      icon: <Smartphone className="h-6 w-6" />,
+      color: "from-[rgba(189,0,255,0.15)] to-transparent",
+      accent: "text-neon-purple"
+    },
+    {
+      title: "Long-Form YouTube Editing",
+      description: "Structured narrative pacing designed for high Average View Duration (AVD), seamless b-roll, and subscriber conversion.",
+      icon: <Play className="h-6 w-6" />,
+      color: "from-[rgba(255,0,127,0.15)] to-transparent",
+      accent: "text-neon-pink"
+    },
+    {
+      title: "Animated Captions",
+      description: "High-impact kinetic subtitles, auto-emoji popups, and custom typography animations built in After Effects.",
+      icon: <Sparkles className="h-6 w-6" />,
+      color: "from-[rgba(255,230,0,0.15)] to-transparent",
+      accent: "text-yellow-400"
+    },
+    {
+      title: "Smooth Transitions",
+      description: "Seamless whip pans, zoom ramps, optical blur transitions, and custom speed ramps that maintain visual momentum.",
+      icon: <Scissors className="h-6 w-6" />,
+      color: "from-[rgba(0,240,255,0.15)] to-transparent",
+      accent: "text-cyan-400"
+    },
+    {
+      title: "Sound Design & Foley",
+      description: "Immersive foley layers, riser transitions, atmospheric rumbles, voice leveling, gating, and background noise removal.",
+      icon: <Volume2 className="h-6 w-6" />,
+      color: "from-[rgba(16,185,129,0.15)] to-transparent",
+      accent: "text-emerald-400"
+    },
+    {
+      title: "Color Correction & Grading",
+      description: "Professional LUT grading, exposure matching, skin-tone correction, and high-contrast cinematic color profiles.",
+      icon: <Eye className="h-6 w-6" />,
+      color: "from-[rgba(255,120,0,0.15)] to-transparent",
+      accent: "text-amber-500"
+    },
+    {
+      title: "After Effects VFX",
+      description: "Advanced keyframing, green screen keying, rotoscoping, callout tracking, and custom visual overlays.",
+      icon: <Cpu className="h-6 w-6" />,
+      color: "from-[rgba(0,100,255,0.15)] to-transparent",
+      accent: "text-blue-500"
+    },
+    {
+      title: "Commercial Ads & Promos",
+      description: "High-converting promo video assets for product launches, brand campaigns, and commercial agencies.",
+      icon: <Flame className="h-6 w-6" />,
+      color: "from-[rgba(255,0,127,0.15)] to-transparent",
+      accent: "text-rose-400"
+    },
+    {
+      title: "High-CTR Thumbnails",
+      description: "High-click-through graphic design engineered to match video narratives and boost impression CTR.",
       icon: <ImageIcon className="h-6 w-6" />,
       color: "from-[rgba(0,240,255,0.15)] to-transparent",
       accent: "text-electric-blue"
+    },
+    {
+      title: "Multi-Cam Synchronization",
+      description: "Multi-angle camera switching, lip-sync audio alignment, and studio episode post-production.",
+      icon: <Heart className="h-6 w-6" />,
+      color: "from-[rgba(189,0,255,0.15)] to-transparent",
+      accent: "text-neon-purple"
     }
   ];
 
