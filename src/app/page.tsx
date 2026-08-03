@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
-import MotionShowcase from "@/components/MotionShowcase";
 import Workflow from "@/components/Workflow";
 import Stats from "@/components/Stats";
 import Pricing from "@/components/Pricing";
@@ -29,9 +28,6 @@ export default function Home() {
 
         {/* Masonry projects and interactive color grading slider */}
         <Portfolio />
-
-        {/* Motion graphics experiments showcase */}
-        <MotionShowcase />
 
         {/* Scrolling playhead workflow timeline */}
         <Workflow />
