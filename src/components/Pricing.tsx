@@ -1,8 +1,8 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Check, Sparkles, AlertCircle, HelpCircle } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import Magnetic from "./Magnetic";
 
 interface PricingPlan {
@@ -19,8 +19,6 @@ interface PricingPlan {
 export default function Pricing() {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { once: true, margin: "-100px" });
-
-  const [isRetainer, setIsRetainer] = useState(false);
 
   const projectPlans: PricingPlan[] = [
     {
@@ -76,62 +74,6 @@ export default function Pricing() {
     }
   ];
 
-  const retainerPlans: PricingPlan[] = [
-    {
-      name: "Creator Kit",
-      price: "$1,499",
-      period: "per month",
-      description: "For active creators needing a continuous pipeline of high-retention shorts and stories.",
-      features: [
-        "Up to 12 vertical shorts / reels per month",
-        "Algorithmic hook formatting",
-        "Kinetic subtitles & auto-emojis",
-        "Audio trend synchronization",
-        "Slack chat support channel",
-        "48-hour turnarounds on edits"
-      ],
-      recommended: false,
-      color: "border-white/5",
-      glow: "rgba(0, 240, 255, 0.05)"
-    },
-    {
-      name: "Studio retainer",
-      price: "$2,999",
-      period: "per month",
-      description: "Your dedicated editing team. Ideal for channels publishing multiple long-form videos.",
-      features: [
-        "Up to 4 long-form videos (under 15m) + 8 shorts",
-        "Full thumbnail integration (A/B testing ready)",
-        "End-to-end sound design & color matching",
-        "Dedicated asset templates libraries",
-        "Same-day Slack communications",
-        "72-hour turnarounds on long cuts"
-      ],
-      recommended: true,
-      color: "border-neon-purple/40 shadow-[0_0_30px_rgba(189,0,255,0.15)]",
-      glow: "rgba(189, 0, 255, 0.2)"
-    },
-    {
-      name: "Agency Partner",
-      price: "$5,499",
-      period: "per month",
-      description: "Scale your creative operations. Full bandwidth allocation for brands and creative agencies.",
-      features: [
-        "Unlimited short-form + up to 10 long-form videos",
-        "Complete asset management & storage",
-        "Dedicated weekly sync meetings",
-        "Premium VFX & 3D renders included",
-        "Priority emergency renders (24hr)",
-        "Custom master templates layout"
-      ],
-      recommended: false,
-      color: "border-white/5",
-      glow: "rgba(255, 0, 127, 0.05)"
-    }
-  ];
-
-  const activePlans = isRetainer ? retainerPlans : projectPlans;
-
   return (
     <section
       id="pricing"
@@ -144,7 +86,7 @@ export default function Pricing() {
 
       <div className="relative z-10 max-w-7xl w-full mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
@@ -167,41 +109,9 @@ export default function Pricing() {
           </motion.h2>
         </div>
 
-        {/* Toggle Switcher */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex justify-center items-center gap-4 mb-16 select-none"
-        >
-          <span className={`text-xs font-semibold tracking-wider font-mono transition-colors duration-300 ${!isRetainer ? "text-white" : "text-neutral-500"}`}>
-            PROJECT BASIS
-          </span>
-          
-          <button
-            onClick={() => setIsRetainer(!isRetainer)}
-            className="w-14 h-8 rounded-full bg-neutral-900 border border-white/10 p-1 flex items-center transition-colors duration-300 relative cursor-none"
-            data-cursor="toggle"
-          >
-            <motion.div
-              layout
-              className="w-5 h-5 rounded-full bg-linear-to-r from-electric-blue to-neon-purple shadow-[0_0_10px_rgba(0,240,255,0.4)]"
-              animate={{ x: isRetainer ? 24 : 0 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            />
-          </button>
-
-          <span className={`text-xs font-semibold tracking-wider font-mono transition-colors duration-300 ${isRetainer ? "text-white" : "text-neutral-500"} flex items-center gap-1.5`}>
-            MONTHLY RETAINER
-            <span className="glass border border-neon-pink/30 rounded px-1.5 py-0.5 text-[8px] font-bold text-neon-pink uppercase tracking-widest animate-pulse">
-              Save 15%
-            </span>
-          </span>
-        </motion.div>
-
         {/* Pricing Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-          {activePlans.map((plan, index) => (
+          {projectPlans.map((plan, index) => (
             <motion.div
               key={plan.name}
               initial={{ opacity: 0, y: 35 }}
