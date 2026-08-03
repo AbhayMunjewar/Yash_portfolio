@@ -57,26 +57,17 @@ export default function Workflow() {
     },
     {
       number: "04",
-      title: "Motion Graphics & VFX",
-      duration: "Day 7-8",
-      description: "Compositing glowing callouts, tracking typography, rendering 3D assets, and overlaying VFX nodes.",
-      icon: <Sparkles className="h-5 w-5 text-neon-pink" />,
-      details: ["3D render composites", "Kinetic caption tracking", "Vector chart graphics", "Rotoscoping & cleanup"],
-      color: "border-neon-pink/30 text-neon-pink"
-    },
-    {
-      number: "05",
       title: "Collaborative Review",
-      duration: "Day 9",
+      duration: "Day 7-8",
       description: "Utilize Frame.io for frame-specific client notes. Adjust micro-cuts and timing parameters based on comments.",
       icon: <RefreshCw className="h-5 w-5 text-emerald-400" />,
       details: ["Frame.io timestamp notes", "Color correction adjustments", "Volume balancing", "Subtitles translation"],
       color: "border-emerald-400/30 text-emerald-400"
     },
     {
-      number: "06",
+      number: "05",
       title: "Final Render & Delivery",
-      duration: "Day 10",
+      duration: "Day 9-10",
       description: "Export cinematic master copies in ProRes, render social crop variants (9:16, 1:1), and deliver client packages.",
       icon: <CheckSquare className="h-5 w-5 text-electric-blue" />,
       details: ["ProRes HDR master copy", "Vertical reels exports", "Metadata injection", "Cloud delivery setup"],
