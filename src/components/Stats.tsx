@@ -19,7 +19,7 @@ export default function Stats() {
 
   const stats: StatItem[] = [
     {
-      value: 500,
+      value: 100,
       suffix: "+",
       label: "Projects Completed",
       icon: <Video className="h-6 w-6 text-electric-blue" />,
@@ -27,7 +27,7 @@ export default function Stats() {
       glow: "rgba(0, 240, 255, 0.15)"
     },
     {
-      value: 100,
+      value: 50,
       suffix: "+",
       label: "Happy Clients",
       icon: <Award className="h-6 w-6 text-neon-purple" />,
@@ -35,7 +35,7 @@ export default function Stats() {
       glow: "rgba(189, 0, 255, 0.15)"
     },
     {
-      value: 20,
+      value: 2,
       suffix: "M+",
       label: "Views Generated",
       icon: <Eye className="h-6 w-6 text-neon-pink" />,
