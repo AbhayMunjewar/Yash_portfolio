@@ -1,12 +1,37 @@
 "use client";
 
-import { motion, Variants } from "framer-motion";
-import { Play, ArrowRight, Video, Scissors, Award, Sparkles } from "lucide-react";
+import { useRef, useState } from "react";
+import { motion, Variants, AnimatePresence } from "framer-motion";
+import { Play, ArrowRight, Video, Scissors, Award, Sparkles, X, Pause, Maximize2 } from "lucide-react";
 import Magnetic from "./Magnetic";
 import ThreeCanvas from "./ThreeCanvas";
 
 export default function Hero() {
   const words = "I Transform Raw Footage Into Cinematic Stories.".split(" ");
+
+  const [isVideoExpanded, setIsVideoExpanded] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const modalVideoRef = useRef<HTMLVideoElement>(null);
+
+  const handleOpenVideo = () => {
+    setIsVideoExpanded(true);
+    setIsPlaying(true);
+    setTimeout(() => {
+      if (modalVideoRef.current) {
+        modalVideoRef.current.currentTime = 0;
+        modalVideoRef.current.play().catch(() => {});
+      }
+    }, 100);
+  };
+
+  const handleCloseVideo = () => {
+    if (modalVideoRef.current) {
+      modalVideoRef.current.pause();
+    }
+    setIsVideoExpanded(false);
+    setIsPlaying(false);
+  };
 
   // Container variants for staggered word animation
   const containerVariants = {
@@ -125,7 +150,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9, rotateY: 15 }}
           animate={{ opacity: 1, scale: 1, rotateY: 0 }}
           transition={{ delay: 0.6, duration: 1.2, type: "spring" }}
-          className="lg:col-span-5 relative w-full aspect-[4/3] max-w-lg mx-auto pointer-events-none select-none perspective-[1000px]"
+          className="lg:col-span-5 relative w-full aspect-[4/3] max-w-lg mx-auto select-none perspective-[1000px]"
         >
           {/* Glass Video Workspace container */}
           <div className="relative w-full h-full glass-premium rounded-2xl overflow-hidden border border-white/10 p-4 flex flex-col justify-between shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
@@ -146,61 +171,50 @@ export default function Hero() {
             </div>
 
             {/* Video preview simulator box */}
-            <div className="relative flex-1 my-3 bg-black/60 rounded-lg border border-white/5 overflow-hidden flex items-center justify-center">
+            <div 
+              onClick={handleOpenVideo}
+              className="relative flex-1 my-3 bg-black/80 rounded-lg border border-white/10 overflow-hidden flex items-center justify-center group cursor-none interactive-item"
+              data-cursor="PLAY"
+            >
+              {/* Actual Video Element showing Active Live Video Preview */}
+              <video
+                ref={videoRef}
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                className="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+              >
+                <source src="/hero_video.mp4" type="video/mp4" />
+                <source src="/lv_0_20260801220725.mp4" type="video/mp4" />
+              </video>
+
               {/* Grid backdrop */}
-              <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:15px_15px]" />
+              <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:15px_15px] pointer-events-none" />
               
               {/* Mock tracking coordinates */}
-              <div className="absolute top-2 left-2 text-[8px] text-white/40 font-mono">
+              <div className="absolute top-2 left-2 text-[8px] text-white/50 font-mono pointer-events-none">
                 [X: 341.22] [Y: 104.90]
               </div>
-              <div className="absolute bottom-2 right-2 text-[8px] text-electric-blue/60 font-mono">
-                FX // LUMETRI_COLOR
+              <div className="absolute bottom-2 right-2 text-[8px] text-electric-blue/70 font-mono pointer-events-none">
+                FX // YXEDITZ_REEL.MP4
               </div>
 
-              {/* Central Motion Graphic vector wire animation */}
-              <svg className="w-4/5 h-4/5 text-electric-blue/40" viewBox="0 0 200 150">
-                {/* Motion track curve */}
-                <motion.path
-                  d="M 10 100 Q 60 20, 110 90 T 190 40"
-                  fill="none"
-                  stroke="rgba(0, 240, 255, 0.4)"
-                  strokeWidth="2"
-                  strokeDasharray="4 4"
-                />
-                {/* Connecting grid line */}
-                <motion.line
-                  x1="110" y1="90" x2="110" y2="10"
-                  stroke="rgba(189, 0, 255, 0.3)"
-                  strokeWidth="1"
-                />
-                {/* Keyframe vectors */}
-                <motion.circle
-                  cx="110" cy="90" r="4"
-                  fill="#bd00ff"
-                  animate={{ r: [4, 7, 4] }}
-                  transition={{ repeat: Infinity, duration: 2 }}
-                />
-                <motion.circle
-                  cx="60" cy="55" r="3"
-                  fill="#00f0ff"
-                  animate={{ scale: [1, 1.3, 1] }}
-                  transition={{ repeat: Infinity, duration: 1.5, delay: 0.5 }}
-                />
-                {/* Scanning sweep lines */}
-                <motion.line
-                  x1="0" y1="0" x2="200" y2="0"
-                  stroke="rgba(0, 240, 255, 0.6)"
-                  strokeWidth="1"
-                  animate={{ y: [0, 150, 0] }}
-                  transition={{ repeat: Infinity, duration: 4, ease: "linear" }}
-                />
-              </svg>
+              {/* Play Overlay Button */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/40 group-hover:bg-black/20 transition-all duration-300 pointer-events-none">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-linear-to-r from-electric-blue to-neon-purple flex items-center justify-center shadow-[0_0_30px_rgba(0,240,255,0.5)] group-hover:scale-110 transition-transform duration-300">
+                  <Play className="h-5 w-5 sm:h-6 sm:w-6 fill-neutral-900 stroke-neutral-900 ml-0.5" />
+                </div>
+                <span className="text-[9px] font-mono font-bold text-white tracking-widest bg-black/70 px-2.5 py-1 rounded-full border border-white/15 backdrop-blur-md">
+                  CLICK TO PLAY SHOWCASE
+                </span>
+              </div>
 
               {/* Rendering tag */}
-              <div className="absolute top-2 right-2 glass border border-electric-blue/20 rounded px-1.5 py-0.5 text-[8px] font-mono text-electric-blue flex items-center gap-1 animate-pulse">
+              <div className="absolute top-2 right-2 glass border border-electric-blue/30 rounded px-1.5 py-0.5 text-[8px] font-mono text-electric-blue flex items-center gap-1 animate-pulse pointer-events-none">
                 <span className="w-1.5 h-1.5 rounded-full bg-electric-blue" />
-                RENDERING REEL_2026.mp4 (94%)
+                SHOWCASE READY (1080p)
               </div>
             </div>
 
@@ -280,19 +294,63 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Floating Mouse Scroll Indicator */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 opacity-65">
-        <span className="text-[9px] uppercase tracking-widest text-neutral-500 font-mono">
-          Scroll Down
-        </span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
-          className="w-5 h-9 rounded-full border border-neutral-600 p-1 flex justify-center"
-        >
-          <div className="w-1 h-2 bg-electric-blue rounded-full" />
-        </motion.div>
-      </div>
+      {/* Pop-forward Full Video Modal when clicked */}
+      <AnimatePresence>
+        {isVideoExpanded && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={handleCloseVideo}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 sm:p-8 backdrop-blur-2xl"
+          >
+            <motion.div
+              initial={{ scale: 0.75, y: 40, opacity: 0 }}
+              animate={{ scale: 1, y: 0, opacity: 1 }}
+              exit={{ scale: 0.75, y: 40, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 280 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-4xl glass-premium rounded-3xl overflow-hidden border border-white/20 shadow-[0_0_100px_rgba(0,240,255,0.3)] flex flex-col"
+            >
+              {/* Modal Window Top Header Bar */}
+              <div className="flex justify-between items-center px-6 py-4 bg-black/80 border-b border-white/10">
+                <div className="flex items-center gap-3">
+                  <div className="flex gap-1.5">
+                    <button onClick={handleCloseVideo} className="w-3 h-3 rounded-full bg-red-500 hover:opacity-80 transition-opacity" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500" />
+                    <div className="w-3 h-3 rounded-full bg-green-500" />
+                  </div>
+                  <span className="text-xs font-mono font-bold text-electric-blue ml-2 tracking-wider">
+                    YXEDITZ_SHOWCASE_REEL.MP4
+                  </span>
+                </div>
+                <button
+                  onClick={handleCloseVideo}
+                  className="p-1.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/20 text-white transition-colors cursor-none interactive-item"
+                  data-cursor="CLOSE"
+                >
+                  <X className="h-5 w-5" />
+                </button>
+              </div>
+
+              {/* Video Player Box */}
+              <div className="relative w-full aspect-video bg-black flex items-center justify-center overflow-hidden">
+                <video
+                  ref={modalVideoRef}
+                  controls
+                  autoPlay
+                  playsInline
+                  className="w-full h-full object-contain"
+                  onEnded={() => setIsPlaying(false)}
+                >
+                  <source src="/hero_video.mp4" type="video/mp4" />
+                  <source src="/lv_0_20260801220725.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
