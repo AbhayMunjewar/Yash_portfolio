@@ -238,7 +238,7 @@ export default function Portfolio() {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -8 }}
-                className="group relative glass rounded-2xl overflow-hidden border border-white/10 flex flex-col aspect-[9/16] max-w-sm mx-auto w-full shadow-[0_15px_30px_rgba(0,0,0,0.4)] interactive-item cursor-none"
+                className="group relative glass rounded-2xl overflow-hidden border border-white/10 flex flex-col aspect-square max-w-sm mx-auto w-full shadow-[0_15px_30px_rgba(0,0,0,0.4)] interactive-item cursor-none"
                 data-cursor="PLAY"
               >
                 {/* Visible Thumbnail Image */}
