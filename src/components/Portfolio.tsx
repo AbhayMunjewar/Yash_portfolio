@@ -167,8 +167,7 @@ export default function Portfolio() {
             "Short-Form Reels & Shorts",
             "Long-Form YouTube",
             "Podcast & Animated Captions",
-            "Trading & Finance",
-            "Sound Design"
+            "Trading & Finance"
           ].map((cat) => (
             <button
               key={cat}
