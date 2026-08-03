@@ -368,6 +368,24 @@ export default function Portfolio() {
               thumbnail: "/podcast_thumb_8.jpg",
               tag: "PODCAST & CAPTIONS",
               buttonText: "WATCH FULL VIDEO"
+            },
+            {
+              id: 22,
+              title: "Trading Setup & High-Retention Forex Edit",
+              category: "Trading & Finance",
+              url: "/trading_video_1.mp4",
+              thumbnail: "/trading_thumb_1.jpg",
+              tag: "TRADING & FINANCE",
+              buttonText: "WATCH TRADING VIDEO"
+            },
+            {
+              id: 23,
+              title: "Follow If You're A Trader - Forex Motivation Cut",
+              category: "Trading & Finance",
+              url: "/trading_video_2.mp4",
+              thumbnail: "/trading_thumb_2.jpg",
+              tag: "TRADING & FINANCE",
+              buttonText: "WATCH TRADING VIDEO"
             }
           ]
             .filter((item) => activeCategory === "All" || item.category === activeCategory)
