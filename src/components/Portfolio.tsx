@@ -199,8 +199,7 @@ export default function Portfolio() {
               category: "Color Grading",
               url: "https://www.instagram.com/reel/DbV2IzLTPIJ/?igsh=MXd4NGswYmRibTJieA==",
               thumbnail: "/ig_thumb_DbV2IzLTPIJ.jpg",
-              tag: "INSTAGRAM REEL",
-              duration: "0:30"
+              tag: "INSTAGRAM REEL"
             },
             {
               id: 2,
@@ -208,8 +207,7 @@ export default function Portfolio() {
               category: "Trading & Finance",
               url: "https://www.instagram.com/reel/DVeFUmEjGni/?igsh=MWNiczE2c3hpZjFlcQ==",
               thumbnail: "/ig_thumb_DVeFUmEjGni.jpg",
-              tag: "INSTAGRAM REEL",
-              duration: "0:45"
+              tag: "INSTAGRAM REEL"
             },
             {
               id: 3,
@@ -217,8 +215,7 @@ export default function Portfolio() {
               category: "Podcast Video Editing",
               url: "https://www.instagram.com/reel/DCbGttZNGPU/?igsh=MXhucGhibmpmbm42ZQ==",
               thumbnail: "/ig_thumb_DCbGttZNGPU.jpg",
-              tag: "INSTAGRAM REEL",
-              duration: "0:60"
+              tag: "INSTAGRAM REEL"
             },
             {
               id: 4,
@@ -226,11 +223,58 @@ export default function Portfolio() {
               category: "Short-Form Reels & Shorts",
               url: "https://www.instagram.com/reel/DLokf5NCp7t/?igsh=OTI1MzdqenduaW9q",
               thumbnail: "/ig_thumb_DLokf5NCp7t.jpg",
-              tag: "INSTAGRAM REEL",
-              duration: "0:25"
+              tag: "INSTAGRAM REEL"
+            },
+            {
+              id: 5,
+              title: "High-Paced Viral Short Reel 01",
+              category: "Short-Form Reels & Shorts",
+              url: "https://www.instagram.com/reel/DXGdmZtiK_D/?igsh=d3lnbjR6OTQ1c3Vq",
+              thumbnail: "/ig_thumb_DXGdmZtiK_D.jpg",
+              tag: "INSTAGRAM REEL"
+            },
+            {
+              id: 6,
+              title: "Dynamic Visual Hooks & Transitions",
+              category: "Short-Form Reels & Shorts",
+              url: "https://www.instagram.com/reel/DXWrXoSCKhA/?igsh=eXU2M3E3cTBuczNn",
+              thumbnail: "/ig_thumb_DXWrXoSCKhA.jpg",
+              tag: "INSTAGRAM REEL"
+            },
+            {
+              id: 7,
+              title: "Creative Short Edit & Sound Design",
+              category: "Short-Form Reels & Shorts",
+              url: "https://www.instagram.com/reel/DXTLr4dgZNA/?igsh=ejBpZzNzdjJwZHc2",
+              thumbnail: "/ig_thumb_DXTLr4dgZNA.jpg",
+              tag: "INSTAGRAM REEL"
+            },
+            {
+              id: 8,
+              title: "High-Engagement Social Cut",
+              category: "Short-Form Reels & Shorts",
+              url: "https://www.instagram.com/reel/DXRAXfOgUXQ/?igsh=MThrNWc4NDh5MnB6Mg==",
+              thumbnail: "/ig_thumb_DXRAXfOgUXQ.jpg",
+              tag: "INSTAGRAM REEL"
+            },
+            {
+              id: 9,
+              title: "Kinetic Captions & Pacing Edit",
+              category: "Short-Form Reels & Shorts",
+              url: "https://www.instagram.com/reel/DXOjO-GiPVt/?igsh=MXBmdHZ1bDlvcHJoaA==",
+              thumbnail: "/ig_thumb_DXOjO-GiPVt.jpg",
+              tag: "INSTAGRAM REEL"
+            },
+            {
+              id: 10,
+              title: "Short-Form Reel Master Cut",
+              category: "Short-Form Reels & Shorts",
+              url: "https://www.instagram.com/reel/DXLqR56iLnP/?igsh=MTJ1dWJ5Mm1jOGd5cA==",
+              thumbnail: "/ig_thumb_DXLqR56iLnP.jpg",
+              tag: "INSTAGRAM REEL"
             }
           ]
-            .filter((item) => activeCategory === "All" || activeCategory === "Color Grading" || item.category === activeCategory)
+            .filter((item) => activeCategory === "All" || item.category === activeCategory)
             .map((item) => (
               <motion.a
                 key={item.id}
