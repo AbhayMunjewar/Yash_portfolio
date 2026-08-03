@@ -164,11 +164,10 @@ export default function Portfolio() {
           {[
             "All",
             "Color Grading",
-            "Podcast Video Editing",
-            "Trading & Finance",
             "Short-Form Reels & Shorts",
             "Long-Form YouTube",
-            "Animated Captions",
+            "Podcast & Animated Captions",
+            "Trading & Finance",
             "Sound Design"
           ].map((cat) => (
             <button
@@ -185,7 +184,7 @@ export default function Portfolio() {
           ))}
         </motion.div>
 
-        {/* Instagram Reels Showcase Grid */}
+        {/* Instagram & GDrive Showcase Grid */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -297,6 +296,78 @@ export default function Portfolio() {
               url: "https://drive.google.com/file/d/1zVnhMCQO_nSVFgV3AdIzSAzFMlUxIJJw/view?usp=sharing",
               thumbnail: "/long_video_thumb.jpg",
               tag: "LONG-FORM YOUTUBE",
+              buttonText: "WATCH FULL VIDEO"
+            },
+            {
+              id: 14,
+              title: "Podcast Animated Caption Reel 01",
+              category: "Podcast & Animated Captions",
+              url: "https://drive.google.com/file/d/1vD7PSJQRIW9q4JFxMn7c00sso6oP86hu/view?usp=sharing",
+              thumbnail: "/podcast_thumb_1.jpg",
+              tag: "PODCAST & CAPTIONS",
+              buttonText: "WATCH FULL VIDEO"
+            },
+            {
+              id: 15,
+              title: "Podcast Animated Caption Reel 02",
+              category: "Podcast & Animated Captions",
+              url: "https://drive.google.com/file/d/1xdENCO-sMq3G35WNw0eslAp0YBcCxswD/view?usp=sharing",
+              thumbnail: "/podcast_thumb_2.jpg",
+              tag: "PODCAST & CAPTIONS",
+              buttonText: "WATCH FULL VIDEO"
+            },
+            {
+              id: 16,
+              title: "Podcast Animated Caption Reel 03",
+              category: "Podcast & Animated Captions",
+              url: "https://drive.google.com/file/d/1T5PZW4ZQMBeiSFiXYnYgzNImRyAS7kH2/view?usp=sharing",
+              thumbnail: "/podcast_thumb_3.jpg",
+              tag: "PODCAST & CAPTIONS",
+              buttonText: "WATCH FULL VIDEO"
+            },
+            {
+              id: 17,
+              title: "Podcast Animated Caption Reel 04",
+              category: "Podcast & Animated Captions",
+              url: "https://drive.google.com/file/d/1i-PKpHw8Ke3pKTg9U_Bzkm7J4BSMGXZO/view?usp=sharing",
+              thumbnail: "/podcast_thumb_4.jpg",
+              tag: "PODCAST & CAPTIONS",
+              buttonText: "WATCH FULL VIDEO"
+            },
+            {
+              id: 18,
+              title: "Podcast Animated Caption Reel 05",
+              category: "Podcast & Animated Captions",
+              url: "https://drive.google.com/file/d/1j6KkeYByRCQLOZrqFE8TxKQTERJACFqA/view?usp=drive_link",
+              thumbnail: "/podcast_thumb_5.jpg",
+              tag: "PODCAST & CAPTIONS",
+              buttonText: "WATCH FULL VIDEO"
+            },
+            {
+              id: 19,
+              title: "Podcast Animated Caption Reel 06",
+              category: "Podcast & Animated Captions",
+              url: "https://drive.google.com/file/d/1QQLDTqtVQgj6n7tSX3TdehRVp8qvei2q/view?usp=drive_link",
+              thumbnail: "/podcast_thumb_6.jpg",
+              tag: "PODCAST & CAPTIONS",
+              buttonText: "WATCH FULL VIDEO"
+            },
+            {
+              id: 20,
+              title: "Podcast Animated Caption Reel 07",
+              category: "Podcast & Animated Captions",
+              url: "https://drive.google.com/file/d/1DkMjOnAuni_B0yxXaTzgoGfBIZDDXJS9/view?usp=drive_link",
+              thumbnail: "/podcast_thumb_7.jpg",
+              tag: "PODCAST & CAPTIONS",
+              buttonText: "WATCH FULL VIDEO"
+            },
+            {
+              id: 21,
+              title: "Podcast Animated Caption Reel 08",
+              category: "Podcast & Animated Captions",
+              url: "https://drive.google.com/file/d/1wORnwSJmOkrKIWp8QQO79mIXYhA724id/view?usp=drive_link",
+              thumbnail: "/podcast_thumb_8.jpg",
+              tag: "PODCAST & CAPTIONS",
               buttonText: "WATCH FULL VIDEO"
             }
           ]
