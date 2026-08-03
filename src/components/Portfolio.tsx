@@ -204,7 +204,7 @@ export default function Portfolio() {
             {
               id: 2,
               title: "High-Retention Trading & Finance Edit",
-              category: "Trading & Finance",
+              category: "Color Grading",
               url: "https://www.instagram.com/reel/DVeFUmEjGni/?igsh=MWNiczE2c3hpZjFlcQ==",
               thumbnail: "/ig_thumb_DVeFUmEjGni.jpg",
               tag: "INSTAGRAM REEL"
@@ -212,7 +212,7 @@ export default function Portfolio() {
             {
               id: 3,
               title: "Podcast Highlight & Sound Design",
-              category: "Podcast Video Editing",
+              category: "Color Grading",
               url: "https://www.instagram.com/reel/DCbGttZNGPU/?igsh=MXhucGhibmpmbm42ZQ==",
               thumbnail: "/ig_thumb_DCbGttZNGPU.jpg",
               tag: "INSTAGRAM REEL"
@@ -220,7 +220,7 @@ export default function Portfolio() {
             {
               id: 4,
               title: "Short-Form Reel & Kinetic Motion",
-              category: "Short-Form Reels & Shorts",
+              category: "Color Grading",
               url: "https://www.instagram.com/reel/DLokf5NCp7t/?igsh=OTI1MzdqenduaW9q",
               thumbnail: "/ig_thumb_DLokf5NCp7t.jpg",
               tag: "INSTAGRAM REEL"
