@@ -198,7 +198,7 @@ export default function Portfolio() {
               title: "Cinematic Color Grade & Edit",
               category: "Color Grading",
               url: "https://www.instagram.com/reel/DbV2IzLTPIJ/?igsh=MXd4NGswYmRibTJieA==",
-              thumbnail: "/cinematic_grading_shot.png",
+              thumbnail: "/ig_thumb_DbV2IzLTPIJ.jpg",
               tag: "INSTAGRAM REEL",
               duration: "0:30"
             },
@@ -207,7 +207,7 @@ export default function Portfolio() {
               title: "High-Retention Trading & Finance Edit",
               category: "Trading & Finance",
               url: "https://www.instagram.com/reel/DVeFUmEjGni/?igsh=MWNiczE2c3hpZjFlcQ==",
-              thumbnail: "/portfolio_cyberpunk.png",
+              thumbnail: "/ig_thumb_DVeFUmEjGni.jpg",
               tag: "INSTAGRAM REEL",
               duration: "0:45"
             },
@@ -216,7 +216,7 @@ export default function Portfolio() {
               title: "Podcast Highlight & Sound Design",
               category: "Podcast Video Editing",
               url: "https://www.instagram.com/reel/DCbGttZNGPU/?igsh=MXhucGhibmpmbm42ZQ==",
-              thumbnail: "/portfolio_car.png",
+              thumbnail: "/ig_thumb_DCbGttZNGPU.jpg",
               tag: "INSTAGRAM REEL",
               duration: "0:60"
             },
@@ -225,7 +225,7 @@ export default function Portfolio() {
               title: "Short-Form Reel & Kinetic Motion",
               category: "Short-Form Reels & Shorts",
               url: "https://www.instagram.com/reel/DLokf5NCp7t/?igsh=OTI1MzdqenduaW9q",
-              thumbnail: "/portfolio_motion.png",
+              thumbnail: "/ig_thumb_DLokf5NCp7t.jpg",
               tag: "INSTAGRAM REEL",
               duration: "0:25"
             }
