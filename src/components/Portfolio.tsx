@@ -287,7 +287,17 @@ export default function Portfolio() {
               category: "Short-Form Reels & Shorts",
               url: "https://www.instagram.com/reel/DXLqR56iLnP/?igsh=MTJ1dWJ5Mm1jOGd5cA==",
               thumbnail: "/ig_thumb_DXLqR56iLnP.jpg",
-              tag: "INSTAGRAM REEL"
+              tag: "INSTAGRAM REEL",
+              buttonText: "WATCH ON INSTAGRAM"
+            },
+            {
+              id: 13,
+              title: "Long-Form YouTube Video Master Edit",
+              category: "Long-Form YouTube",
+              url: "https://drive.google.com/file/d/1zVnhMCQO_nSVFgV3AdIzSAzFMlUxIJJw/view?usp=sharing",
+              thumbnail: "/long_video_thumb.jpg",
+              tag: "LONG-FORM YOUTUBE",
+              buttonText: "WATCH FULL VIDEO"
             }
           ]
             .filter((item) => activeCategory === "All" || item.category === activeCategory)
@@ -313,7 +323,7 @@ export default function Portfolio() {
                   {/* Subtle gradient vignette */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#030306] via-black/20 to-transparent opacity-90" />
 
-                  {/* Top Badge: Instagram Tag */}
+                  {/* Top Badge: Tag */}
                   <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-20">
                     <div className="glass px-2.5 py-1 rounded-full text-[9px] font-bold text-electric-blue uppercase tracking-widest border border-white/15 backdrop-blur-md flex items-center gap-1.5">
                       <svg className="w-3 h-3 fill-current text-pink-400" viewBox="0 0 24 24">
@@ -331,7 +341,7 @@ export default function Portfolio() {
                       </svg>
                     </div>
                     <span className="text-[10px] font-mono font-bold text-white tracking-widest bg-black/70 px-3 py-1 rounded-full border border-white/20 backdrop-blur-md group-hover:border-electric-blue transition-colors">
-                      WATCH ON INSTAGRAM
+                      {item.buttonText || "WATCH ON INSTAGRAM"}
                     </span>
                   </div>
                 </div>
