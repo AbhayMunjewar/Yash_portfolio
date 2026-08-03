@@ -227,6 +227,14 @@ export default function Portfolio() {
             },
             {
               id: 5,
+              title: "Cinematic Color Grade Mastercut",
+              category: "Color Grading",
+              url: "https://www.instagram.com/reel/DXJeVk9iDhB/?igsh=dGQxb2l3ejJxcndm",
+              thumbnail: "/ig_thumb_DXJeVk9iDhB.jpg",
+              tag: "INSTAGRAM REEL"
+            },
+            {
+              id: 6,
               title: "High-Paced Viral Short Reel 01",
               category: "Short-Form Reels & Shorts",
               url: "https://www.instagram.com/reel/DXGdmZtiK_D/?igsh=d3lnbjR6OTQ1c3Vq",
@@ -234,7 +242,7 @@ export default function Portfolio() {
               tag: "INSTAGRAM REEL"
             },
             {
-              id: 6,
+              id: 7,
               title: "Dynamic Visual Hooks & Transitions",
               category: "Short-Form Reels & Shorts",
               url: "https://www.instagram.com/reel/DXWrXoSCKhA/?igsh=eXU2M3E3cTBuczNn",
@@ -242,7 +250,7 @@ export default function Portfolio() {
               tag: "INSTAGRAM REEL"
             },
             {
-              id: 7,
+              id: 8,
               title: "Creative Short Edit & Sound Design",
               category: "Short-Form Reels & Shorts",
               url: "https://www.instagram.com/reel/DXTLr4dgZNA/?igsh=ejBpZzNzdjJwZHc2",
@@ -250,7 +258,7 @@ export default function Portfolio() {
               tag: "INSTAGRAM REEL"
             },
             {
-              id: 8,
+              id: 9,
               title: "High-Engagement Social Cut",
               category: "Short-Form Reels & Shorts",
               url: "https://www.instagram.com/reel/DXRAXfOgUXQ/?igsh=MThrNWc4NDh5MnB6Mg==",
@@ -258,7 +266,7 @@ export default function Portfolio() {
               tag: "INSTAGRAM REEL"
             },
             {
-              id: 9,
+              id: 10,
               title: "Kinetic Captions & Pacing Edit",
               category: "Short-Form Reels & Shorts",
               url: "https://www.instagram.com/reel/DXOjO-GiPVt/?igsh=MXBmdHZ1bDlvcHJoaA==",
@@ -266,7 +274,7 @@ export default function Portfolio() {
               tag: "INSTAGRAM REEL"
             },
             {
-              id: 10,
+              id: 11,
               title: "Short-Form Reel Master Cut",
               category: "Short-Form Reels & Shorts",
               url: "https://www.instagram.com/reel/DXLqR56iLnP/?igsh=MTJ1dWJ5Mm1jOGd5cA==",
