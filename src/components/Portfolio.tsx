@@ -386,6 +386,24 @@ export default function Portfolio() {
               thumbnail: "/trading_thumb_2.jpg",
               tag: "TRADING & FINANCE",
               buttonText: "WATCH TRADING VIDEO"
+            },
+            {
+              id: 24,
+              title: "Trading Masterclass & Market Analysis Edit",
+              category: "Trading & Finance",
+              url: "/trading_video_3.mp4",
+              thumbnail: "/trading_thumb_3.jpg",
+              tag: "TRADING & FINANCE",
+              buttonText: "WATCH TRADING VIDEO"
+            },
+            {
+              id: 25,
+              title: "Forex Strategy & Pacing Breakdown",
+              category: "Trading & Finance",
+              url: "/trading_video_4.mp4",
+              thumbnail: "/trading_thumb_4.jpg",
+              tag: "TRADING & FINANCE",
+              buttonText: "WATCH TRADING VIDEO"
             }
           ]
             .filter((item) => activeCategory === "All" || item.category === activeCategory)

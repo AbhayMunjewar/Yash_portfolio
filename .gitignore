@@ -41,4 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # root video source
+/*.mp4
 /lv_0_20260801220725.mp4
