@@ -24,17 +24,17 @@ export default function Pricing() {
 
   const projectPlans: PricingPlan[] = [
     {
-      name: "Starter Reel",
-      price: "$499",
+      name: "Starter Reel / Shorts",
+      price: "₹500",
       period: "per project",
-      description: "Ideal for short promotional clips, quick social reels, or basic editing mockups.",
+      description: "Ideal for short viral clips, quick social reels, and high-retention short-form edits.",
       features: [
         "Up to 60 seconds runtime",
-        "Raw footage assembly & pacing",
-        "Basic motion graphics (titles/logo)",
-        "Sound leveling & foley sync",
-        "3 revision cycles",
-        "4-day delivery turnaround"
+        "Kinetic captions & hook editing",
+        "Pacing cuts & audio balancing",
+        "Basic visual overlays & transitions",
+        "2 revision cycles",
+        "Fast 24-48hr turnaround"
       ],
       recommended: false,
       color: "border-white/5",
@@ -42,35 +42,33 @@ export default function Pricing() {
     },
     {
       name: "Cinematic Package",
-      price: "$1,299",
+      price: "₹1,500",
       period: "per project",
-      description: "Perfect for premium commercial ads, corporate brand narratives, or high-end music films.",
+      description: "Perfect for premium commercial ads, brand narratives, and high-end video edits.",
       features: [
         "Up to 5 minutes runtime",
-        "Advanced visual rhythm pacing",
-        "Custom tracking motion overlays",
         "DaVinci Resolve HDR color grading",
+        "Advanced visual rhythm & pacing",
+        "Custom motion tracking overlays",
         "Immersive sound design & cleanup",
-        "5 revision cycles",
-        "Priority 7-day delivery"
+        "Priority 3-5 day delivery"
       ],
       recommended: true,
       color: "border-neon-purple/40 shadow-[0_0_30px_rgba(189,0,255,0.15)]",
       glow: "rgba(189, 0, 255, 0.2)"
     },
     {
-      name: "Advanced VFX Master",
-      price: "$2,499",
-      period: "per project",
-      description: "Tailored for projects requiring heavy CGI integration, compositing, and visual overlays.",
+      name: "Shoot + Edit Package",
+      price: "₹2,500",
+      period: "per session",
+      description: "Complete end-to-end production featuring professional on-location video shooting and complete editing.",
       features: [
-        "Up to 10 minutes runtime",
-        "Complex 3D graphics integration",
-        "Green-screen keying & rotoscoping",
-        "High-fidelity custom grading curves",
-        "Cinema-grade multi-channel audio",
-        "Unlimited revisions (during editing)",
-        "Dedicated project pipeline"
+        "On-location video shoot & camera setup",
+        "Professional audio & mic recording",
+        "Full video editing & cinematic color grade",
+        "Kinetic captions & motion graphics",
+        "Multi-angle framing & storyboarding",
+        "Raw footage + final rendered exports"
       ],
       recommended: false,
       color: "border-white/5",
